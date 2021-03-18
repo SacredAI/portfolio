@@ -1,5 +1,7 @@
 'use strict';
 
+
+
 let header = $(`
 <nav class="navbar navbar-expand-lg fixed-top">
 <a class="navbar-brand" href="index.html">Alex Donnellan</a>
@@ -15,7 +17,7 @@ let header = $(`
    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
    <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-   <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+<!--   <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>-->
    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
     <!--TOGGLE FOR LIGHT/DARK MODE-->
    <li>

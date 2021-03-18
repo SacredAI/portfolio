@@ -2,20 +2,26 @@
 
 html[data-theme = 'light']
 {
-  --bg1-color: #ecf0f3;
-  --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  --border:1px solid #ecf0f3;
+    --text: black;
+    --bg1-color: #ecf0f3;
+    --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    --border:1px solid #ecf0f3;
 }
 
 html[data-theme = 'dark']
 {
-  --bg1-color: #272727;
-  --shadow: 0 4px 8px 0 rgba(104, 102, 102, 0.2);
-  --border:none;
+    --text: white;
+    --bg1-color: #272727;
+    --shadow: 0 4px 8px 0 rgba(104, 102, 102, 0.2);
+    --border:none;
 }
 
 /* -----Education Section CSS----- */
 
+
+.head, .main-heading, .pre-heading{
+    color: var(--text);
+}
 
 .sect
 {
@@ -61,7 +67,7 @@ html[data-theme = 'dark']
 }
 
 .s2 h4,h6,p{
-  color:black;
+  color: black;
 }
 
 

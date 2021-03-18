@@ -3,7 +3,7 @@ html[data-theme = 'light']
   --bg-col: #fafafa;
   --shadow1: rgba(0, 0, 0, 0.3);
   --shadow2: rgba(0, 0, 0, 0.2);
-
+  --text-color: #6C757D;
   --neu-light: white;
   --neu-dark: #c3c3c3;
   --neu-color: #c3c3c3;
@@ -15,7 +15,7 @@ html[data-theme = 'dark']
   --bg-col: #272727;
   --shadow1: rgba(128, 122, 122, 0.233);
   --shadow2: rgba(231, 216, 216, 0.007);
-
+  --text-color: #fff;
   --neu-light: #282828;
   --neu-dark: #080808;
   --neu-color: white;
@@ -43,6 +43,7 @@ a:hover {
 .row{
   display: flex;
   row-gap: 3em;
+  color: var(--text-color)!important;
 }
 
 .card{
@@ -57,10 +58,10 @@ a:hover {
 .NeuInput-outer {
   display: flex;
   border-radius: 1rem;
-  background-color: var(--nue-light);
+  background-color: var(--neu-light);
   padding: 0.5rem;
   margin-bottom: 3rem;
-  box-shadow: .3rem .3rem .6rem var(--neu-dark), -.2rem -.2rem .5rem var(--neu-light); 
+  box-shadow: .3rem .3rem .6rem var(--neu-dark), -.2rem -.2rem .5rem var(--neu-light);
   margin-left: auto;
   margin-right: 3rem;
 }
@@ -103,10 +104,19 @@ a:hover {
   }
 }
 
+.card .searchdiv{
+  position: absolute;
+  float: left;
+  left: 1em;
+  bottom: 0.7em;
+  z-index: 1;
+}
+
 .card .menu-content {
   list-style-type: none;
   position: absolute;
   right: 0;
+  top: 12em;
 }
 
 .card .menu-content::before,
@@ -154,7 +164,6 @@ a:hover {
 
 .card .data .content {
   padding: 1em;
-  position: relative;
   z-index: 1;
   margin-bottom: 4em;
 }
@@ -187,20 +196,22 @@ a:hover {
 }
 @media (max-width:400px){
   .content .title-div{
-    margin-bottom:3em ;
+    margin-bottom: 0;
+  }
+
+  .content .description-div{
+    margin-top: 1rem;
+  }
+
+  .content .searchdiv{
+    position: absolute;
   }
 }
-@media (min-width:400px){
-  .content .title-div .title{
-    margin-bottom: 4em;
-    
-  }
-}
+
 @media(min-width: 60rem)
 {
   .card .title-div{
-    padding-bottom: 2.3rem;
-    margin-bottom: 2em;
+    margin-bottom: 3rem;
   }
 }
 
@@ -249,7 +260,7 @@ a:hover {
 
 @media(min-width: 311px){
   .card .text{
-    font-size: 0.7;
+    font-size: 0.7em;
   }
 }
 
@@ -278,10 +289,14 @@ a:hover {
   }
 }
 
+.card .description{
+  margin-top: 1rem;
+  padding: 0;
+}
+
 .tagbutton{
   background-color: #b6bcebfd;
   color: #0117E7;
-  margin-top: 5px;
   margin-right: 11px;
   border-radius: 100px;
   border:none;
@@ -372,11 +387,8 @@ input[type="text"]{
 
 /*social icons*/
 
-.social-icon svg {
-  margin-top: 50px;
-}
 .social-icon svg:hover {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .project-box {
@@ -422,9 +434,9 @@ input[type="text"]{
 
 @media (max-width: 377px) {
 	.skill-card .data {
-		transform: translateY(calc(90px + 4em));
+		transform: translateY(calc(90px + 5em));
     }
-    
+
     .social-icon svg {
       margin-top: 20px;
     }
@@ -432,7 +444,7 @@ input[type="text"]{
   @media (min-width: 960px) {
     .skill-card .data {
       color: #fff;
-      transform: translateY(calc(80px + 4em));
+      transform: translateY(calc(80px + 5em));
       padding: 5px;
     }
 }
