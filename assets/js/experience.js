@@ -7,14 +7,21 @@ const exp = [
     title: "Software Developer",
     cardImage: "assets/images/experience-page/wiltos.jpg",
     place: "WiltOS Technologies",
-    time: "(May, 2019 - present)",
+    time: "(May, 2019 - Present)",
     desp: "<li>Created and modified existing software to correct errors and update to new standards.</li> <li>Assisted customers with the setup and maintenance of purchased products.</li> <li>Overhauled UI and UX for outdated addons.</li>",
+  },
+  {
+    title: "Shift Manager",
+    cardImage: "assets/images/experience-page/mcd.png",
+    place: "McDonald's, Australia",
+    time: "(January, 2020 - Present)",
+    desp: "<li>Worked with a team to ensure shifts ran smoothly and correctly.</li><li>Adapted to problems as they arouse and sought after ways to mitigate issues and find solutions.</li>",
   },
   {
     title: "Crew Member",
     cardImage: "assets/images/experience-page/mcd.png",
     place: "McDonald's, Australia",
-    time: "(May, 2017 - Present)",
+    time: "(May, 2017 - January, 2020)",
     desp: "<li>Worked with a team to ensure shifts ran smoothly and correctly.</li><li>Adapted to problems as they arouse and sought after ways to mitigate issues and find solutions.</li>",
   },
 ];
